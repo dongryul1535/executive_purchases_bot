@@ -1,18 +1,5 @@
 name: OpenDart Executive Purchase Monitor
 
-on:
-  schedule:
-    # 평일 오전 9시 (KST)
-    - cron: '0 0 * * 1-5'
-    # 평일 오후 12시 (KST)  
-    - cron: '0 3 * * 1-5'
-    # 평일 오후 3시 (KST)
-    - cron: '0 6 * * 1-5'
-    # 평일 오후 6시 (KST)
-    - cron: '0 9 * * 1-5'
-    # 평일 오후 9시 (KST)
-    - cron: '0 12 * * 1-5'
-  workflow_dispatch:  # 수동 실행 허용
 
 env:
   TZ: Asia/Seoul  # 한국 시간대 설정
